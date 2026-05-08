@@ -1,0 +1,283 @@
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1;
+    
+
+    font-family: "M PLUS 1", sans-serif; 
+
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img {border: 0}
+table {border-collapse: collapse; border-spacing: 0}
+ul {list-style: none}
+q:before, q:after,
+blockquote:before, blockquote:after {content: ""}
+
+
+:root {
+	/* Light mode variables */
+	--background: #fff;
+	--text-color: #555;
+	--heading-color: #592187;
+	--link-color: #8d4cc2;
+	--link-hover-color: #9c80b3;
+	--link-hover-border: #9c80b3;
+	--link-underline-color: #9c80b3;
+	--code-bg: #f3f3f3;
+	--button-bg: #592187;
+	--button-color: #fff;
+}
+
+body.dark-theme {
+	  /* Dark mode variables */
+	  --background: #1e1e1e;
+	  --text-color: #e0e0e0;
+	  --heading-color: #ff008c;
+	  --link-color: #e76fb1;
+	  --link-hover-color: #eb99c6;
+	  --link-hover-border: #eb99c6;
+	  --link-underline-color: #eb99c6;
+	  --code-bg: #2a2a2a;
+	  --button-bg: #ff008c;
+	  --button-color: #fff;
+}
+
+html:not(.page-loaded) *,
+html:not(.page-loaded) {
+    transition: none !important;
+}
+
+html.page-loaded *,
+html.page-loaded,
+html.page-loaded .hidden {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.5s ease;
+}
+
+/* html.page-loaded *,
+html.page-loaded .hidden {
+    transition: transform 0.5s ease;
+} */
+
+/* 
+* {
+	transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                fill 0.3s ease,
+                stroke 0.3s ease;
+} */
+
+/* @font-face {  
+  font-family: "Myriad Pro Regular";
+  src: url(fonts/MyriadPro-Regular.otf) format("opentype");
+}
+
+@font-face {  
+  font-family: "Myriad Pro Bold";
+  src: url(fonts/MyriadPro-Bold.otf) format("opentype");
+}
+
+@font-face {  
+  font-family: "Myriad Pro Italic";
+  src: url(fonts/MyriadPro-It.otf) format("opentype");
+} */
+
+
+body           {font-size:18px; font-family:"M PLUS 1", sans-serif; color:var(--text-color); background-color:var(--background)}
+h1             {font-size:30px; margin-top:1em; font-weight:700; color:var(--heading-color)}
+h1             {color:var(--heading-color)}
+h2             {font-size:24px; margin-top:40px; font-weight:700; color:var(--heading-color)}
+p              {margin:15px 0; line-height:1.5em; text-align:justify; font-weight: 100;}
+a.norecolor    {color:var(--text-color)}
+a              {color:var(--link-color); text-decoration:none}
+a:hover        {padding-bottom: 1px; color:var(--link-hover-color); border-bottom:1px solid var(--link-hover-border)}
+a.nounderline:hover {color:var(--link-hover-color); border-bottom:none}
+a.underline    {padding-bottom: 1px; border-bottom:1px solid var(--link-underline-color)}
+a.underline:hover {padding-bottom: 1px; border-bottom:1px solid var(--link-hover-color)}
+ul             {margin:15px 0; margin-left:25px; list-style-type:disc}
+ol             {margin:15px 0; margin-left:25px; list-style-type:decimal}
+li             {margin:10px 0; text-align:justify; font-weight:100;}
+
+#cover         {float:right; margin:20px 0 5px 30px}
+#wrapper       {width:100%; max-width:1100px; margin:0 auto; padding-top: 40px; margin-bottom: 0px}
+#subwrapper    {width:100%; max-width:900px; margin:0 auto; padding-top: 40px; margin-bottom: 80px}
+#title         {color:var(--heading-color); font-weight:900; font-size:40px; text-align:center; margin-top: 0.5em;}
+#conference    {font-size:20px; text-align:center; font-weight:500; margin-top:2em;}
+#teaser        {margin-top:40px}
+
+#authors       {width:100%; margin-top:1.5em; display: flex; justify-content: center; border-spacing: 10px;}
+#authors tr    {height:25px}
+#authors tr.mail {height:35px}
+#authors td    {text-align:center; padding:0 1em}
+#authors #affiliation {font-size:14px; padding-top: 0.5em}
+#authors #affiliation span {margin-left: 20px}
+#navigation {
+	font-size:20px;
+	text-align:center;
+	font-weight: 500;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px
+}
+#navigation td {padding:15px; padding-bottom:0px}
+
+#bibtexsec {
+	font-family:"Courier",monospace;
+	font-size:14px;
+	background-color: var(--code-bg);
+	padding: 15px;
+	overflow:auto;
+	margin:15px 0
+}
+
+.subtitle {
+    font-size: 70%;
+}
+
+.super         {vertical-align:super; font-size:70%}
+.bold          {/*font-family:"Myriad Pro Bold",Helvetica,sans-serif; */font-weight:bold}
+/* .italic,#conference {font-family:"Myriad Pro Italic",Helvetica,sans-serif; font-style:italic} */
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-container img {
+  width: 600px;
+  max-width: 100%; /* Ensures the image scales down if needed */
+  height: auto; /* Maintains aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+/* Botón flotante de tema */
+.theme-toggle-btn {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: var(--button-bg);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--button-color);
+    font-size: 24px;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+/* increase button size if we are in mobile view */
+/* @media (max-width: 768px) {
+    .theme-toggle-btn {
+		top: 0.5em;
+		right: 0.5em;
+        width: 3em;
+        height: 3em;
+        font-size: 32px;
+    }
+} */
+
+.theme-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Control de iconos */
+.theme-toggle-btn .fa-moon {
+    display: none;
+}
+
+body.dark-theme .theme-toggle-btn .fa-sun {
+    display: none;
+}
+
+body.dark-theme .theme-toggle-btn .fa-moon {
+    display: inline-block;
+}
+
+/* Clase para ocultar - se desliza hacia la derecha */
+.theme-toggle-btn.hidden {
+    transform: translateX(5em); /* Se desliza a la derecha */
+    pointer-events: none; /* No se puede hacer clic */
+
+}
+
+/* En móviles, ajustar la distancia de deslizamiento */
+@media screen and (max-width: 480px) {
+    .theme-toggle-btn.hidden {
+        transform: translateX(4em);
+    }
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    width: 20em;
+    height: 100%;
+    /* box-shadow: 2px 0 5px rgba(0,0,0,0.1); */
+    padding: 1em;
+    box-sizing: border-box;
+    z-index: 9998; /* Debajo del botón de tema */
+    /* displayear los elementos verticalmente en el centro */
+    display: flex;
+    align-items: center;
+
+}
+#sidebar-content {
+    align-self: center;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 0, 255, 0.541); /* Fondo semitransparente */
+    box-shadow: 2em 0 2em rgba(0,0,0,0.1);
+    padding: 1em;
+    box-sizing: border-box;
+    z-index: 9998; /* Debajo del botón de tema */
+    /* displayear los elementos verticalmente en el centro */
+    display: flex;
+    align-items: end;
+    border-radius: 1em;
+    /* colocar los elementos verticalmente en el centro */
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#name {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 0.5em;
+    text-align: right;
+}
+
