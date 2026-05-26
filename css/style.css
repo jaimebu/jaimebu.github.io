@@ -31,13 +31,13 @@ blockquote:before, blockquote:after {content: ""}
 :root {
 	/* Light mode variables */
 	--background: #fff;
-	--text-color: #555;
+	--text-color: #000;
 	--heading-color: #592187;
 	--link-color: #8d4cc2;
 	--link-hover-color: #9c80b3;
 	--link-hover-border: #9c80b3;
 	--link-underline-color: #9c80b3;
-	--code-bg: #f3f3f3;
+	--code-bg: #eaeaea;
 	--button-bg: #592187;
 	--button-color: #fff;
 }
@@ -51,7 +51,7 @@ body.dark-theme {
 	  --link-hover-color: #eb99c6;
 	  --link-hover-border: #eb99c6;
 	  --link-underline-color: #eb99c6;
-	  --code-bg: #2a2a2a;
+	  --code-bg: #303030;
 	  --button-bg: #ff008c;
 	  --button-color: #fff;
 }
@@ -104,13 +104,13 @@ body           {font-size:18px; font-family:"M PLUS 1", sans-serif; color:var(--
 h1             {font-size:30px; margin-top:1em; font-weight:700; color:var(--heading-color)}
 h1             {color:var(--heading-color)}
 h2             {font-size:24px; margin-top:40px; font-weight:700; color:var(--heading-color)}
-p              {margin:15px 0; line-height:1.5em; text-align:justify; font-weight: 100;}
+p              {margin:15px 0; line-height:1.5em; text-align:justify; font-weight: 300;}
 a.norecolor    {color:var(--text-color)}
 a              {color:var(--link-color); text-decoration:none}
-a:hover        {padding-bottom: 1px; color:var(--link-hover-color); border-bottom:1px solid var(--link-hover-border)}
-a.nounderline:hover {color:var(--link-hover-color); border-bottom:none}
-a.underline    {padding-bottom: 1px; border-bottom:1px solid var(--link-underline-color)}
-a.underline:hover {padding-bottom: 1px; border-bottom:1px solid var(--link-hover-color)}
+a:hover        {padding-bottom: 1px; color:var(--link-hover-color)}
+a.nounderline:hover {color:var(--link-hover-color)}
+a.underline    {padding-bottom: 1px}
+a.underline:hover {padding-bottom: 1px}
 ul             {margin:15px 0; margin-left:25px; list-style-type:disc}
 ol             {margin:15px 0; margin-left:25px; list-style-type:decimal}
 li             {margin:10px 0; text-align:justify; font-weight:100;}
@@ -259,7 +259,6 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     height: 100%;
     width: 100%;
     background-color: rgba(128, 0, 255, 0.541); /* Fondo semitransparente */
-    box-shadow: 2em 0 2em rgba(0,0,0,0.1);
     padding: 1em;
     box-sizing: border-box;
     z-index: 9998; /* Debajo del botón de tema */
@@ -281,3 +280,87 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     text-align: right;
 }
 
+
+.publication {
+    background-color: var(--code-bg);
+    margin: 0.5em 0;
+    border-radius: 1em;
+    font-size: 1.5em;
+    color: var(--text-color);
+    text-align: right;
+}
+
+.pub-icontainer {
+    padding: 0.5em;
+}
+
+.pub-icon {
+    border-radius: 0.5em;
+    width: 100%;
+}
+
+.pub-content {
+    width: 80%;
+    padding: 0.5em;
+    padding-left: 0;
+    display: inline-block;
+}
+
+.year-and-type, .conference {
+    font-size: 0.6em;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 0.2em;
+}
+
+.conference {
+    font-style: italic;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.authors {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+a.oneauthor {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: font-weight 0.5s ease;
+}
+
+a.oneauthor:hover {
+    color: var(--link-hover-color);
+    font-weight: 500;
+}
+
+.me{
+    font-weight: 500;
+}
+
+.studying_years {
+    font-size: 0.6em;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 0.2em;
+}
+
+.studies_title {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-top: 0.2em;
+}
+
+.studies_institution {
+    font-size: 0.7em;
+    font-weight: 300;
+    margin-top: 0.2em;
+}

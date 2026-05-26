@@ -1,0 +1,56 @@
+{
+    "publications": [
+        {
+            "id": "Bielsa2026-CLGaze",
+            "title": "An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments",
+            "authors": [
+                {
+                    "name": "Jaime Bielsa",
+                    "me": true
+                },
+                {
+                    "name": "Jorge Pina",
+                    "url": "https://jpinacolas.github.io"
+                },
+                {
+                    "name": "Ana Serrano",
+                    "url": "https://ana-serrano.github.io"
+                },
+                {
+                    "name": "Daniel Martin",
+                    "url": "https://https://webdiis.unizar.es/~danims/"
+                }
+            ],
+            "year": 2026,
+            "type": "Journal (JCR Q2)",
+            "conference": "Computers & Graphics (Proc. of CEIG)",
+            "url": "https://graphics.unizar.es/projects/Bielsa2026-CLGaze/"
+        },
+        {
+            "id": "Bielsa2026-CLGazePoster",
+            "title": "Exploring Gaze Behavior in Immersive VR under Cognitive Load",
+            "authors": [
+                {
+                    "name": "Jaime Bielsa",
+                    "me": true
+                },
+                {
+                    "name": "Jorge Pina",
+                    "url": "https://jpinacolas.github.io"
+                },
+                {
+                    "name": "Ana Serrano",
+                    "url": "https://ana-serrano.github.io"
+                },
+                {
+                    "name": "Daniel Martin",
+                    "url": "https://https://webdiis.unizar.es/~danims/"
+                }
+            ],
+            "year": 2026,
+            "type": "Poster",
+            "conference": "IEEE VR Posters",
+            "url": "https://graphics.unizar.es/projects/CLGaze_2026/"
+        }
+    ]
+}
