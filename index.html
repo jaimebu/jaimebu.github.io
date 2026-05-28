@@ -32,21 +32,55 @@
         <!-- build a static block at the left -->
         <div id="sidebar">
             <div id="sidebar-content">
-                <div id="name">
-                    Jaime<br>Bielsa<br>Uche
+				<div id="photo-container">
+					<img src="profile.jpg" alt="Profile photo" id="photo">
+				</div>
+                <div id="name" class="text-center mg-b-5 text-sz-20 text-wg-700 color-main">
+                    Jaime Bielsa
                 </div>
-                <div>
-                    Graphics and Imaging Lab
-                </div>
-                <div>
+				<div class="text-center mg-b-5 text-sz-10 text-wg-700 color-body">
+					PhD Student
+				</div>
+                <div class="text-center mg-b-10">
+                    Graphics and Imaging Lab<br>
                     Universidad de Zaragoza - I3A
                 </div>
-                <div>
-                    <img src="linkedin_logo.svg" alt="LinkedIn" class="sidebar-icon" width="1em" height="1em">
-                </div>
-                <div>
-
-                </div>
+				<div id="email" class="d-flex align-items-center justify-content-center mg-b-5">
+					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="mailto:jaimebu@unizar.es" target="_blank">
+						<i class="fas fa-envelope"></i>
+					</a>
+					<text class="color-body">jaimebu@unizar.es</text>
+				</div>
+				<div id="contact" class="d-flex align-items-center justify-content-center mg-b-10">
+					<!-- button for linkedin  -->
+					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="https://www.linkedin.com/in/jaimebu" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<!-- button for orcid  -->
+					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
+						<i class="fab fa-orcid"></i>
+					</a>
+					<!-- button for google scholar  -->
+					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
+						<i class="fab fa-google"></i>
+					</a>
+					<!-- button for github  -->
+					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center" href="https://github.com/jaimebu" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+                <button class="button mg-b-5 text-sz-8 text-wg-700" onclick="window.location.href='#aboutme'">
+					About me
+                </button>
+                <button class="button mg-b-5 text-sz-8 text-wg-700" onclick="window.location.href='#setofpublications'">
+					Publications	
+                </button>
+                <button class="button mg-b-5 text-sz-8 text-wg-700" onclick="window.location.href='#career'">
+					Career	
+                </button>
+                <button class="button text-sz-8 text-wg-700" onclick="window.location.href='#contact'">
+					Contact	
+                </button>
             </div>
         </div>
 
@@ -58,7 +92,7 @@
 
 
 
-				<h1 id="abstract">
+				<h1 id="aboutme">
 					About me
 				</h1>
 				<p>
@@ -83,9 +117,20 @@
 
 
 
-				<h1 id="studies">
-					Studies
+				<h1 id="career">
+					Career
 				</h1>
+
+				<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
+					<td width="30%" class="pub-icontainer">
+						<image class="pub-icon" src="mrgcv.png" alt="Paper icon" style="width: 100%;"></image>
+					</td>
+					<td width="70%" class="pub-content">
+						<div class="studying_years">2025-</div>
+						<div class="studies_title">Research Engineer</div>
+						<div class="studies_institution">Universidad de Zaragoza</div>
+					</td>
+				</tr></tbody></table></div>
 
 				<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
 					<td width="30%" class="pub-icontainer">
@@ -108,8 +153,44 @@
 						<div class="studies_institution">Universidad de Zaragoza</div>
 					</td>
 				</tr></tbody></table></div>
-				
 
+				<h1 id="contact">
+					Contact
+				</h1>
+
+				<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
+					<td width="40%" class="text-align-center text-sz-6">
+						<i class="fas fa-map-marker-alt text-sz-20"></i><br>
+						<p class="text-align-center text-wg-500">Universidad de Zaragoza</p>
+						<p class="text-align-center mg-bt-0">Instituto de Investigación en Ingeniería de Aragón (I3A)</p>
+						<p class="text-align-center mg-bt-0 text-italic">Planta 1, Bloque 5, Sala PostDoc</p>
+						<p class="text-align-center mg-bt-0">C/ Mariano Esquillor Gómez, s/n</p>
+						<p class="text-align-center mg-bt-0">50018 - Zaragoza</p>
+						<p class="text-align-center mg-t-0 bg-b-10">Spain</p>
+						<div class="d-flex align-items-center justify-content-center vertical-align-center flex-column">
+							<a class="button pd-5 mg-b-5" href="mailto:jaimebu@unizar.es" target="_blank">
+								<i class="fas fa-envelope mg-r-5"></i>jaimebu@unizar.es
+							</a>
+							<a class="button pd-5 mg-b-5" href="https://www.linkedin.com/in/jaimebu" target="_blank">
+								<i class="fab fa-linkedin mg-r-5"></i>Jaime Bielsa Uche
+							</a>
+							<a class="button pd-5 mg-b-5" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
+								<i class="fab fa-orcid mg-r-5"></i>0009-0001-5198-2062
+							</a>
+							<a class="button pd-5 mg-b-5" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
+								<i class="fab fa-google mg-r-5"></i>Jaime Bielsa
+							</a>
+							<a class="button pd-5" href="https://github.com/jaimebu" target="_blank">
+								<i class="fab fa-github mg-r-5"></i>jaimebu
+							</a>
+						</div>
+					</td>
+					<td width="60%" class="pub-content">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d789.2101028635752!2d-0.8878335598999543!3d41.68467521187674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd59135d9d8942b3%3A0xa2fd5e66dd0a6120!2sInstituto%20de%20Investigaci%C3%B3n%20en%20Ingenier%C3%ADa%20de%20Arag%C3%B3n%20(I3A)!5e0!3m2!1sen!2ses!4v1779991599877!5m2!1sen!2ses" width="100%" height="450" style="border:0; border-radius: 0.5em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</td>
+				</tr></tbody></table></div>
+
+				
 
 
 

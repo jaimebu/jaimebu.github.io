@@ -16,21 +16,21 @@ function generarHTML(data) {
                 <image class="pub-icon"src="${data.id}.png" alt="Paper icon" style="width: 100%;"></image>
             </td>
             <td width="80%" class="pub-content">
-                <div class="year-and-type">
+                <div class="text-sz-6 text-wg-500 text-color-body">
                     ${data.year} - ${data.type}
                 </div>
-                <div class="conference">
+                <div class="text-sz-6 text-wg-500 text-color-body text-italic mg-t-2">
                     ${data.conference}
                 </div>
-                <div class="title">
-                    <a href="${data.url}" class="title" target="_blank">${data.title}</a>
+                <div class="text-color-body mg-bt-5 text-sz-10 text-wg-700">
+                    <a href="${data.url}" class="color-body hover-color-light" target="_blank">${data.title}</a>
                 </div>
                 <div class="authors">
                     ${data.authors.map(author => {
                         if (author.me) {
-                            return `<span class="me">${author.name}</span>`;
+                            return `<span class="text-wg-500">${author.name}</span>`;
                         } else {
-                            return `<a href="${author.url}" class="oneauthor" target="_blank">${author.name}</a>`;
+                            return `<a href="${author.url}" class="text-wg-300 hover-text-wg-500 color-body hover-color-light" target="_blank">${author.name}</a>`;
                         }
                     }).join(', ')}
                 </div>
