@@ -7,7 +7,7 @@ function toggleTheme() {
     const isDark = document.body.classList.contains('dark-theme');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
     
-    updateSVGForTheme();
+    updateSVGForTheme('gilab_img', 'gilab_img_light.png', 'gilab_img_dark.png');
 }
 
 // Inicializar tema
@@ -26,14 +26,7 @@ function initTheme() {
             document.body.classList.add('dark-theme');
         }
     }
-    updateSVGForTheme();
-    /* add css style: * {
-	transition: background-color 0.3s ease,
-                color 0.3s ease,
-                border-color 0.3s ease,
-                fill 0.3s ease,
-                stroke 0.3s ease;
-    }*/
+    updateSVGForTheme('gilab_img', 'gilab_img_light.png', 'gilab_img_dark.png');
 
 
 
@@ -56,13 +49,13 @@ document.addEventListener('DOMContentLoaded', initTheme);
 
 
 
-function updateSVGForTheme() {
-    const teaserImg = document.getElementById('teaser');
+function updateSVGForTheme(id, imgLight, imgDark) {
+    const teaserImg = document.getElementById(id);
     if (teaserImg) {
         if (document.body.classList.contains('dark-theme')) {
-            teaserImg.src = 'teaser_dark_anydevice.svg';
+            teaserImg.src = imgDark;
         } else {
-            teaserImg.src = 'teaser_anydevice.svg';
+            teaserImg.src = imgLight;
         }
     }
 }

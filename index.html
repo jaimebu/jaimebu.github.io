@@ -31,196 +31,226 @@
 
         <!-- build a static block at the left -->
         <div id="sidebar">
-            <div id="sidebar-content">
-				<div id="photo-container">
-					<img src="profile.jpg" alt="Profile photo" id="photo">
+            <div id="sidebar-content" class="pd-10 max-height-100pc">
+				<div class="pd-0 d-flex flex-column gap-5 of-y-auto of-x-hidden hide-scroll max bd-rd-10 align-items-center">
+					<div id="photo-container">
+						<img src="profile.jpg" alt="Profile photo" id="photo">
+					</div>
+					<div id="name" class="text-center text-sz-20 text-wg-700 color-main">
+						Jaime Bielsa
+					</div>
+					<div class="text-center text-sz-10 text-wg-700 color-body">
+						<text class="text-wg-300">he/him | </text>MSc Student
+					</div>
+					<div class="text-center mg-b-5">
+						Graphics and Imaging Lab<br>
+						Universidad de Zaragoza - I3A
+					</div>
+					<div id="email" class="d-flex align-items-center justify-content-center">
+						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center mg-r-5" href="mailto:jaimebu@unizar.es" target="_blank">
+							<i class="fas fa-envelope"></i>
+						</a>
+						<text class="color-body">jaimebu@unizar.es</text>
+					</div>
+					<div id="contact" class="d-flex align-items-center justify-content-center mg-b-5">
+						<!-- button for linkedin  -->
+						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center mg-r-5" href="https://www.linkedin.com/in/jaimebu" target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<!-- button for orcid  -->
+						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center mg-r-5" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
+							<i class="fab fa-orcid"></i>
+						</a>
+						<!-- button for google scholar  -->
+						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center mg-r-5" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
+							<i class="fas fa-graduation-cap"></i>
+						</a>
+						<!-- button for github  -->
+						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center mg-r-5" href="https://github.com/jaimebu" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+						<a class="button icon-button width-35em pd-0 d-flex hover-color-light justify-content-center text-wg-900" href="jaimebu_cv.pdf" target="_blank">
+							<i class="fas fa-file mg-r-5"></i><text class="pd-b-1">CV</text>
+						</a>
+					</div>
+					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#aboutme">
+						About me
+					</a>
+					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#setofpublications">
+						Publications	
+					</a>
+					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#career">
+						Career	
+					</a>
+					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#conferences">
+						Conferences	
+					</a>
+					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#contacto">
+						Contact	
+					</a>
 				</div>
-                <div id="name" class="text-center mg-b-5 text-sz-20 text-wg-700 color-main">
-                    Jaime Bielsa
-                </div>
-				<div class="text-center mg-b-5 text-sz-10 text-wg-700 color-body">
-					PhD Student
-				</div>
-                <div class="text-center mg-b-10">
-                    Graphics and Imaging Lab<br>
-                    Universidad de Zaragoza - I3A
-                </div>
-				<div id="email" class="d-flex align-items-center justify-content-center mg-b-5">
-					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="mailto:jaimebu@unizar.es" target="_blank">
-						<i class="fas fa-envelope"></i>
-					</a>
-					<text class="color-body">jaimebu@unizar.es</text>
-				</div>
-				<div id="contact" class="d-flex align-items-center justify-content-center mg-b-10">
-					<!-- button for linkedin  -->
-					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="https://www.linkedin.com/in/jaimebu" target="_blank">
-						<i class="fab fa-linkedin"></i>
-					</a>
-					<!-- button for orcid  -->
-					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
-						<i class="fab fa-orcid"></i>
-					</a>
-					<!-- button for google scholar  -->
-					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center mg-r-5" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
-						<i class="fab fa-google"></i>
-					</a>
-					<!-- button for github  -->
-					<a class="button icon-button pd-0 d-flex hover-color-body justify-content-center" href="https://github.com/jaimebu" target="_blank">
-						<i class="fab fa-github"></i>
-					</a>
-				</div>
-                <button class="button mg-b-5 text-sz-8 text-wg-700" onclick="window.location.href='#aboutme'">
-					About me
-                </button>
-                <button class="button mg-b-5 text-sz-8 text-wg-700" onclick="window.location.href='#setofpublications'">
-					Publications	
-                </button>
-                <button class="button mg-b-5 text-sz-8 text-wg-700" onclick="window.location.href='#career'">
-					Career	
-                </button>
-                <button class="button text-sz-8 text-wg-700" onclick="window.location.href='#contact'">
-					Contact	
-                </button>
-            </div>
+			</div>
         </div>
 
 
 
-		<div id="subwrapper" style="padding-left: 20em;">
+		<div id="content">
+			<!-- center content -->
+			<!-- <div style = "max-width: 900px; margin: 0 auto;"> -->
 
-			<div id="content">
+			<h1 id="aboutme" class="mg-t-0">
+				About me
+			</h1>
+			<p class="text-wg-400">
+				Hi! Good to see you here. :)
+			</p>
+			<p class="text-wg-400">
+				This is Jaime, a novel researcher finishing Master studies, under the supervision of <a href="http://webdiis.unizar.es/~danims/" class="hover-text-wg-500">Daniel Martin</a> and <a href="https://ana-serrano.github.io/" class="hover-text-wg-500">Ana Serrano</a>.
+				My contributions to the field of Extended Reality (XR) include the analysis of gaze and performance from people in immersive environments, based on factors like multisensory inputs, interaction with reality via passthrough, or cognitive load. My interests in XR include research on these topics and similar ones for comprehension of human attention and insights in how users behave in immersive environments.
+				I'm about to finish my Master studies, and I'm looking forward to set my path for PhD studies in the next course.
+			</p>
+			<!-- <p class="text-wg-400">
+				Also I love to spend my spare time enjoying videogames, music and hanging out.
+			</p> -->
+			<p>
+				How to pronounce my name: <i>hi</i> + <i>meh</i>. You can also check it <a href="https://translate.google.es/?sl=es&tl=en&text=Jaime&op=translate" class="hover-text-wg-500" target="_blank">here</a>.
+			</p>
 
 
-
-				<h1 id="aboutme">
-					About me
-				</h1>
-				<p>
-					¡Hola! Good to see you here. :)
-				</p>
-				<p>
-					This is Jaime, a novel researcher pursuing doctoral studies in Computer Science, under the supervision of Daniel Martin and Ana Serrano.
-					My studies involve the whole pipeline in Extended Reality (XR), from app development to analysis of eye-tracking data, with a special focus on human attention, multisensory inputs and cognitive workflow.
-					I'm about to finish my Master studies, and I'm looking forward to set my path for PhD studies in the next course.
-				</p>
-				<p>
-					Nevertheless, I love to spend my spare time enjoying videogames, music (I'm one of those KPop fans, not sorry) and hanging out.
-				</p>
-
-
-
-				<h1 id="setofpublications">
-					Publications
-				</h1>
-				<script src="show_publications.js"></script>
-				<div id="publications"></div>
+			<!-- fas fa-star -->
+			<!-- far fa-star -->
 
 
 
-				<h1 id="career">
-					Career
-				</h1>
-
-				<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
-					<td width="30%" class="pub-icontainer">
-						<image class="pub-icon" src="mrgcv.png" alt="Paper icon" style="width: 100%;"></image>
-					</td>
-					<td width="70%" class="pub-content">
-						<div class="studying_years">2025-</div>
-						<div class="studies_title">Research Engineer</div>
-						<div class="studies_institution">Universidad de Zaragoza</div>
-					</td>
-				</tr></tbody></table></div>
-
-				<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
-					<td width="30%" class="pub-icontainer">
-						<image class="pub-icon" src="mrgcv.png" alt="Paper icon" style="width: 100%;"></image>
-					</td>
-					<td width="70%" class="pub-content">
-						<div class="studying_years">2024-2026</div>
-						<div class="studies_title">MSc in Robotics, Graphics and Computer Vision</div>
-						<div class="studies_institution">Universidad de Zaragoza</div>
-					</td>
-				</tr></tbody></table></div>
-
-				<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
-					<td width="30%" class="pub-icontainer">
-						<image class="pub-icon" src="mrgcv.png" alt="Paper icon" style="width: 100%;"></image>
-					</td>
-					<td width="70%" class="pub-content">
-						<div class="studying_years">2020-2024</div>
-						<div class="studies_title">BSc in Computer Science</div>
-						<div class="studies_institution">Universidad de Zaragoza</div>
-					</td>
-				</tr></tbody></table></div>
-
-				<h1 id="contact">
-					Contact
-				</h1>
-
-				<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
-					<td width="40%" class="text-align-center text-sz-6">
-						<i class="fas fa-map-marker-alt text-sz-20"></i><br>
-						<p class="text-align-center text-wg-500">Universidad de Zaragoza</p>
-						<p class="text-align-center mg-bt-0">Instituto de Investigación en Ingeniería de Aragón (I3A)</p>
-						<p class="text-align-center mg-bt-0 text-italic">Planta 1, Bloque 5, Sala PostDoc</p>
-						<p class="text-align-center mg-bt-0">C/ Mariano Esquillor Gómez, s/n</p>
-						<p class="text-align-center mg-bt-0">50018 - Zaragoza</p>
-						<p class="text-align-center mg-t-0 bg-b-10">Spain</p>
-						<div class="d-flex align-items-center justify-content-center vertical-align-center flex-column">
-							<a class="button pd-5 mg-b-5" href="mailto:jaimebu@unizar.es" target="_blank">
-								<i class="fas fa-envelope mg-r-5"></i>jaimebu@unizar.es
-							</a>
-							<a class="button pd-5 mg-b-5" href="https://www.linkedin.com/in/jaimebu" target="_blank">
-								<i class="fab fa-linkedin mg-r-5"></i>Jaime Bielsa Uche
-							</a>
-							<a class="button pd-5 mg-b-5" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
-								<i class="fab fa-orcid mg-r-5"></i>0009-0001-5198-2062
-							</a>
-							<a class="button pd-5 mg-b-5" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
-								<i class="fab fa-google mg-r-5"></i>Jaime Bielsa
-							</a>
-							<a class="button pd-5" href="https://github.com/jaimebu" target="_blank">
-								<i class="fab fa-github mg-r-5"></i>jaimebu
-							</a>
-						</div>
-					</td>
-					<td width="60%" class="pub-content">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d789.2101028635752!2d-0.8878335598999543!3d41.68467521187674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd59135d9d8942b3%3A0xa2fd5e66dd0a6120!2sInstituto%20de%20Investigaci%C3%B3n%20en%20Ingenier%C3%ADa%20de%20Arag%C3%B3n%20(I3A)!5e0!3m2!1sen!2ses!4v1779991599877!5m2!1sen!2ses" width="100%" height="450" style="border:0; border-radius: 0.5em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</td>
-				</tr></tbody></table></div>
-
-				
+			<h1 id="setofpublications">
+				Publications
+			</h1>
+			<script src="show_publications.js"></script>
+			<div id="publications"></div>
 
 
 
+			<h1 id="career">
+				Career
+			</h1>
 
-				<!-- <div class="publication">
-					<table><tbody><tr style="display: flex; align-items: center;">
-						<td width="20%" style="width: 20%; padding: 0.5em;">
-							<image src="Bielsa2026-CLGaze.png" alt="Paper icon" style="width: 100%;"></image>
-						</td>
-						<td width="80%" style="width: 80%; padding: 0.5em; display: inline-block">
-							<div class="year-and-type">
-								2026 - Paper
-							</div>
-							<div class="journal">
-								Computers & Graphics Journal
-							</div>
-							<div class="title">
-								<a href="https://graphics.unizar.es/projects/Bielsa2026-CLGaze/" class="author" target="_blank">An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments</a>
-							</div>
-							<div class="authors">
-								<text class="me">Jaime Bielsa</text>,
-								<a href="https://jpinacolas.github.io" class="author">Jorge Pina</a>,
-								<a href="https://ana-serrano.github.io" class="author">Ana Serrano</a>,
-								<a href="https://webdiis" class="author">Daniel Martin</a>
-							</div>
-						</td>
-					</tr></tbody></table>
-				</p> -->
+			<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
+				<td class="pub-icontainer">
+					<image src="gilab_img_dark.png" id="gilab_img" class="pub-icon" style="width: 8em; height: 5em; object-fit:cover;">
+					<!-- <image class="pub-icon" src="gilabimg.png" alt="Paper icon" style="width: 8em; height: 5em; object-fit:cover;"> -->
 
+					</image>
+				</td>
+				<td class="pub-content">
+					<div class="studying_years text-sz-9">2025-</div>
+					<div class="studies_title text-sz-15">Research Engineer</div>
+					<div class="studies_institution text-sz-10">Universidad de Zaragoza</div>
+				</td>
+			</tr></tbody></table></div>
+
+			<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
+				<td class="pub-icontainer">
+					<image class="pub-icon" src="mrgcv.png" alt="Paper icon" style="width: 8em; height: 5em; object-fit:cover;"></image>
+				</td>
+				<td class="pub-content">
+					<div class="studying_years text-sz-9">2024-2026</div>
+					<div class="studies_title text-sz-15">MSc in Robotics, Graphics and Computer Vision</div>
+					<div class="studies_institution text-sz-10">Universidad de Zaragoza</div>
+				</td>
+			</tr></tbody></table></div>
+
+			<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
+				<td class="pub-icontainer">
+					<image class="pub-icon" src="10101010.jpg" alt="Paper icon" style="width: 8em; height: 5em; object-fit:cover;"></image>
+				</td>
+				<td class="pub-content">
+					<div class="studying_years text-sz-9">2020-2024</div>
+					<div class="studies_title text-sz-15">BSc in Computer Science</div>
+					<div class="studies_institution text-sz-10">Universidad de Zaragoza</div>
+				</td>
+			</tr></tbody></table></div>
+
+
+
+			<h1 id="conferences">
+				Conferences
+			</h1>
+
+			<div class="publication pd-10">
+				<table width="100%" class="">
+					<thead>
+						<tr class="">
+							<th width="10%" class="pd-r-10 text-align-right text-wg-700">Year</th>
+							<th width="90%" class=" text-wg-700">Conference</th>
+						</tr>
+					</thead>
+				</table>
+				<div id="conference-entries">
+				</div>
 			</div>
+
+
+
+
+
+
+
+
+
+			<h1 id="contacto">
+				Contact
+			</h1>
+
+			<div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
+				<td width="40%" class="text-align-center text-sz-8 pd-5">
+					<i class="fas fa-map-marker-alt text-sz-20"></i><br>
+					<p class="text-align-center text-wg-500">Universidad de Zaragoza</p>
+					<p class="text-align-center mg-y-0">Instituto de Investigación en Ingeniería de Aragón (I3A)</p>
+					<p class="text-align-center mg-y-0 text-italic">Planta 1, Bloque 5, Sala PostDoc</p>
+					<p class="text-align-center mg-y-0">C/ Mariano Esquillor Gómez, s/n</p>
+					<p class="text-align-center mg-y-0">50018 - Zaragoza</p>
+					<p class="text-align-center mg-t-0 bg-b-10">Spain</p>
+					<div class="d-flex align-items-center justify-content-center vertical-align-center flex-column">
+						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="mailto:jaimebu@unizar.es" target="_blank">
+							<div class="d-flex nowrap">
+								<i class="fas fa-envelope mg-r-5"></i>jaimebu@unizar.es
+							</div>
+						</a>
+						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://www.linkedin.com/in/jaimebu" target="_blank">
+							<div class="d-flex nowrap">
+								<i class="fab fa-linkedin-in mg-r-5"></i>Jaime Bielsa Uche
+							</div>
+						</a>
+						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
+							<div class="d-flex nowrap">
+								<i class="fab fa-orcid mg-r-5"></i>0009-0001-5198-2062
+							</div>
+						</a>
+						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
+							<div class="d-flex nowrap">
+								<i class="fas fa-graduation-cap mg-r-5"></i>Jaime Bielsa
+							</div>
+						</a>
+						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://github.com/jaimebu" target="_blank">
+							<div class="d-flex nowrap">
+								<i class="fab fa-github mg-r-5"></i>jaimebu
+							</div>
+						</a>
+						<a class="button pd-5 of-x-hidden width-fit-to-available hover-color-light" href="https://discord.gg" target="_blank">
+							<div class="d-flex nowrap">
+								<i class="fab fa-discord mg-r-5"></i>jbielsa
+							</div>
+						</a>
+					</div>
+				</td>
+				<td width="60%" class="pub-content">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d789.2101028635752!2d-0.8878335598999543!3d41.68467521187674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd59135d9d8942b3%3A0xa2fd5e66dd0a6120!2sInstituto%20de%20Investigaci%C3%B3n%20en%20Ingenier%C3%ADa%20de%20Arag%C3%B3n%20(I3A)!5e0!3m2!1sen!2ses!4v1779991599877!5m2!1sen!2ses" width="100%" height="500" style="border:0; border-radius: 0.75em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</td>
+			</tr></tbody></table></div>
+
+
+
+
 		</div>
 
 

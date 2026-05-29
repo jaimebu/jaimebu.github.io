@@ -52,5 +52,23 @@
             "conference": "IEEE VR Posters",
             "url": "https://graphics.unizar.es/projects/CLGaze_2026/"
         }
+    ],
+
+
+    "conferences": [
+        {
+            "id": "CEIG2026",
+            "name": "XXXV Spanish Conference on Computer Graphics (CEIG)",
+            "year": 2026,
+            "contribution": "Full paper",
+            "url": "https://eurographics.es/CEIG26/"
+        },
+        {
+            "id": "IEEEVR2026",
+            "name": "31th IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR)",
+            "year": 2026,
+            "contribution": "Poster",
+            "url": "https://ieeevr.org/2026/"
+        }
     ]
 }
