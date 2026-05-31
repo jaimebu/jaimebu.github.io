@@ -21,11 +21,13 @@ fetch('publications.json')
 
 function insertPublication(data) {
     return `
-        <div class="publication"><table width="100%"><tbody><tr style="display: flex; align-items: center;">
-            <td class="pub-icontainer">
-                <image class="pub-icon"src="${data.id}.png" alt="Paper icon" style="width: 10em;"></image>
-            </td>
-            <td class="pub-content">
+        <div class="publication">
+            <div class="pub-icontainer">
+                <a href="${data.url}" target="_blank">
+                    <image class="pub-icon"src="${data.id}.png" alt="Paper icon" style="width: 10em;"></image>
+                </a>
+            </div>
+            <div class="pub-content">
                 <div class="text-sz-9 text-wg-500 text-color-body">
                     ${data.year} - ${data.type}
                 </div>
@@ -44,8 +46,8 @@ function insertPublication(data) {
                         }
                     }).join(', ')}
                 </div>
-            </td>
-        </tr></tbody></table></div>
+            </div>
+        </div>
     `;
 }
 

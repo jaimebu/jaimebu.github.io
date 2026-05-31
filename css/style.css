@@ -316,6 +316,16 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     border-radius: 1.5em;
     color: var(--body-color);
     text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.conferences {
+    background-color: var(--background-bw);
+    margin: 0.5em 0;
+    border-radius: 1.5em;
+    color: var(--body-color);
+    text-align: right;
 }
 
 .pub-icontainer {
@@ -332,6 +342,20 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     padding: 0.75em;
     padding-left: 0;
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .publication {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .pub-content {
+        width: auto;
+        padding: 0.75em;
+        padding-top: 0;
+    }
 }
 
 .title {
