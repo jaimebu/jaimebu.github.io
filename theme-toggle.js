@@ -1,13 +1,38 @@
+let theme_responsive_imgs = [];
+
+
+
+fetch('publications.json')
+    .then(response => response.json())
+    .then(data => {
+        const responsiveImgs = data.career.map(entry => {
+            if (entry.theme_responsive) {
+                return {
+                    id: entry.id+'-theme',
+                    light: `${entry.id}.${entry.file_format}`,
+                    dark: `${entry.id}-dark.${entry.file_format}`
+                };
+            }
+            return null;
+        }).filter(img => img !== null);
+        theme_responsive_imgs.push(...responsiveImgs);
+    })
+    .catch(error => console.error('Error:', error));
+
+
+    
 // Función para alternar tema
 function toggleTheme() {
     // Alternar la clase dark-theme en el body
     document.body.classList.toggle('dark-theme');
-    console.log('Tema alternado. Tema actual:', document.body.classList.contains('dark-theme') ? 'oscuro' : 'claro');
+    // console.log('Tema alternado. Tema actual:', document.body.classList.contains('dark-theme') ? 'oscuro' : 'claro');
     // Guardar preferencia
     const isDark = document.body.classList.contains('dark-theme');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
     
-    updateSVGForTheme('gilab_img', 'gilab_img_light.png', 'gilab_img_dark.png');
+    for (const img of theme_responsive_imgs) {
+        updateSVGForTheme(img.id, img.light, img.dark);
+    }
 }
 
 // Inicializar tema
@@ -26,10 +51,10 @@ function initTheme() {
             document.body.classList.add('dark-theme');
         }
     }
-    updateSVGForTheme('gilab_img', 'gilab_img_light.png', 'gilab_img_dark.png');
 
-
-
+    for (const img of theme_responsive_imgs) {
+        updateSVGForTheme(img.id, img.light, img.dark);
+    }
 }
 
 // Escuchar cambios en el sistema (solo si no hay preferencia manual)

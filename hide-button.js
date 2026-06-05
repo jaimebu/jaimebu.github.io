@@ -46,7 +46,7 @@ function handleUserActivity() {
 console.log(toggleBtn);
 // Configurar event listeners si el botón existe
 if (toggleBtn) {
-    console.log('Botón de alternancia de tema encontrado, configurando auto-ocultamiento.');
+    // console.log('Botón de alternancia de tema encontrado, configurando auto-ocultamiento.');
     // Eventos de actividad del usuario
     const activityEvents = [
         'scroll', 'touchstart', 'touchmove', 'wheel', 'hover'

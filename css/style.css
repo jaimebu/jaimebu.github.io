@@ -41,6 +41,7 @@ blockquote:before, blockquote:after {content: ""}
 	--button-bg: #218779;
 	--button-color: #fff;
     --sidebar-background: #8debde80;
+    --golden-colour: #8a7300;
 }
 
 body.dark-theme {
@@ -56,6 +57,7 @@ body.dark-theme {
 	--button-bg: hsl(155, 58%, 59%);
 	--button-color: #0a472e;
     --sidebar-background: #8eebc480;
+    --golden-colour: #F5D327;
 }
 
 html:not(.page-loaded) *,
@@ -107,7 +109,7 @@ html.page-loaded .hidden {
 
 
 body           {font-size:18px; font-family:"M PLUS 1", sans-serif; color:var(--body-color); background-color:var(--background)}
-h1             {font-size:30px; margin-top:1em; font-weight:700; color:var(--main-color)}
+h1             {font-size:30px; padding-top:1em; font-weight:700; color:var(--main-color)}
 h1             {color:var(--main-color)}
 h2             {font-size:24px; margin-top:40px; font-weight:700; color:var(--main-color)}
 p              {margin:15px 0; line-height:1.5em; text-align:justify; font-weight: 300;}
@@ -263,7 +265,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     width:calc(100% - 21em);
     max-width: 900px;
     margin:0 auto;
-    padding: 5em 1em 5em 20em
+    padding: 4em 1em 5em 20em
 }
 
 @media (max-width: 768px) {
@@ -335,6 +337,13 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 .pub-icon {
     border-radius: 0.75em;
     width: 100%;
+}
+
+.career-entry-icon {
+    width: 8em;
+    height: 5em;
+    border-radius: 0.75em;
+    object-fit:cover
 }
 
 .pub-content {
@@ -863,6 +872,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     max-width: -moz-available !important;
     max-width: -webkit-fill-available !important;
 }
+.width-auto { width: auto !important; }
 
 .height-0pc { height: 0% !important; }
 .height-10pc { height: 10% !important; }
@@ -917,3 +927,4 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     max-height: -moz-available !important;
     max-height: -webkit-fill-available !important;
 }
+.height-auto { height: auto !important; }

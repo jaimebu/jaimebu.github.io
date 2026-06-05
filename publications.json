@@ -24,7 +24,14 @@
             "year": 2026,
             "type": "Journal (JCR Q2)",
             "conference": "Computers & Graphics (Proc. of CEIG)",
-            "url": "https://graphics.unizar.es/projects/Bielsa2026-CLGaze/"
+            "url": "https://graphics.unizar.es/projects/Bielsa2026-CLGaze/",
+            "notes": [
+                {
+                    "icon": "fas fa-star",
+                    "color": "golden-colour",
+                    "text": "CEIG26 Honorable mention for Best Full Paper"
+                }
+            ]
         },
         {
             "id": "Bielsa2026-CLGazePoster",
@@ -53,6 +60,40 @@
             "url": "https://graphics.unizar.es/projects/CLGaze_2026/"
         }
     ],
+
+
+
+
+
+    "career": [
+        {
+            "id": "research-gilab",
+            "years": "2025-",
+            "name": "Research Engineer",
+            "institution": "Universidad de Zaragoza",
+            "file_format": "png",
+            "theme_responsive": true
+        },
+        {
+            "id": "msc-unizar",
+            "years": "2024-2026",
+            "name": "MSc in Robotics, Graphics and Computer Vision",
+            "institution": "Universidad de Zaragoza",
+            "file_format": "png",
+            "theme_responsive": false
+        },
+        {
+            "id": "bsc-unizar",
+            "years": "2020-2024",
+            "name": "BSc in Computer Science",
+            "institution": "Universidad de Zaragoza",
+            "file_format": "jpg",
+            "theme_responsive": false
+        }
+    ],
+
+
+
 
 
     "conferences": [
