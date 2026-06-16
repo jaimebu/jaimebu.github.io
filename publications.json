@@ -18,17 +18,33 @@
                 },
                 {
                     "name": "Daniel Martin",
-                    "url": "https://https://webdiis.unizar.es/~danims/"
+                    "url": "https://webdiis.unizar.es/~danims/"
                 }
             ],
             "year": 2026,
             "type": "Journal (JCR Q2)",
             "conference": "Computers & Graphics (Proc. of CEIG)",
             "url": "https://graphics.unizar.es/projects/Bielsa2026-CLGaze/",
+            "tags": [
+                {
+                    "name": "PDF",
+                    "link": "https://graphics.unizar.es/projects/Bielsa2026-CLGaze/Bielsa_2026_CLGaze.pdf",
+                    "color": "coral"
+                },
+                {
+                    "name": "Project Page",
+                    "link": "https://graphics.unizar.es/projects/Bielsa2026-CLGaze/",
+                    "color": "lilac"
+                },
+                {
+                    "name": "Code (coming soon)",
+                    "color": "lightblue"
+                }
+            ],
             "notes": [
                 {
                     "icon": "fas fa-star",
-                    "color": "golden-colour",
+                    "color": "golden-color",
                     "text": "CEIG26 Honorable mention for Best Full Paper"
                 }
             ]
@@ -51,13 +67,25 @@
                 },
                 {
                     "name": "Daniel Martin",
-                    "url": "https://https://webdiis.unizar.es/~danims/"
+                    "url": "https://webdiis.unizar.es/~danims/"
                 }
             ],
             "year": 2026,
             "type": "Poster",
             "conference": "IEEE VR Posters",
-            "url": "https://graphics.unizar.es/projects/CLGaze_2026/"
+            "url": "https://graphics.unizar.es/projects/CLGaze_2026/",
+            "tags": [
+                {
+                    "name": "PDF",
+                    "link": "https://graphics.unizar.es/projects/CLGaze_2026/IEEEVR_CLGaze_2026.pdf",
+                    "color": "coral"
+                },
+                {
+                    "name": "Project Page",
+                    "link": "https://graphics.unizar.es/projects/CLGaze_2026/",
+                    "color": "lilac"
+                }
+            ]
         }
     ],
 

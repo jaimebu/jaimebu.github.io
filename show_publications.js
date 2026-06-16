@@ -50,7 +50,7 @@ function insertPublication(data) {
                 <div class="text-color-body mg-y-5 text-sz-15 text-wg-700">
                     <a href="${data.url}" class="color-body hover-color-secondary" target="_blank">${data.title}</a>
                 </div>
-                <div class="authors text-sz-10 text-wg-300 text-color-body mg-y-5">
+                <div class="authors text-sz-10 text-wg-300 text-color-body mg-t-5">
                     ${data.authors.map(author => {
                         if (author.me) {
                             return `<span class="text-wg-500">${author.name}</span>`;
@@ -61,11 +61,21 @@ function insertPublication(data) {
                 </div>
                 ${data.notes && data.notes.length > 0 ? data.notes.map(note => {
                     return `
-                        <div class="note text-sz-9 text-wg-500" style="color:var(--${note.color});">
+                        <div class="note text-sz-9 text-wg-500 mg-t-5" style="color:var(--${note.color});">
                             <i class="${note.icon}"></i> ${note.text}
                         </div>
                     `;
                 }).join('') : ''}
+                ${data.tags && data.tags.length > 0 ? `<div class="tag text-sz-9 text-wg-500 mg-t-5 color-body d-flex gap-5">
+                    ${data.tags.map(tag => {
+                        if (!tag.link) {
+                            return `<span class="button pubbutton text-wg-700 dark-text ${tag.color}-button">${tag.name}</span>`;
+                        }
+                        return `
+                            <a href="${tag.link}" class="button pubbutton text-wg-700 dark-text ${tag.color}-button">${tag.name}</a>
+                        `;
+                    }).join('')}
+                </div>` : ''}
             </div>
         </div>
     `;

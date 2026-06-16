@@ -41,7 +41,19 @@ blockquote:before, blockquote:after {content: ""}
 	--button-bg: #218779;
 	--button-color: #fff;
     --sidebar-background: #8debde80;
-    --golden-colour: #8a7300;
+    --golden-color: #8a7300;
+    --coral-color: #eb6f6f;
+    --coral-darker: #aa0000;
+    --lightblue-color: #6fd2eb;
+    --lightblue-darker: #00728f;
+    --lightgreen-color: #61f59a;
+    --lightgreen-darker: #00772e;
+    --salmon-color: #f5b27f;
+    --salmon-darker: #8b3c00;
+    --lilac-color: #ccacf7;
+    --lilac-darker: #45009e;
+    --black-color: #000000;
+    --carbon-color: #202020;
 }
 
 body.dark-theme {
@@ -57,7 +69,19 @@ body.dark-theme {
 	--button-bg: hsl(155, 58%, 59%);
 	--button-color: #0a472e;
     --sidebar-background: #8eebc480;
-    --golden-colour: #F5D327;
+    --golden-color: #F5D327;
+    --coral-color: #eb6f6f;
+    --coral-darker: #aa0000;
+    --lightblue-color: #6fd2eb;
+    --lightblue-darker: #00728f;
+    --lightgreen-color: #61f59a;
+    --lightgreen-darker: #00772e;
+    --salmon-color: #f5b27f;
+    --salmon-darker: #8b3c00;
+    --lilac-color: #ccacf7;
+    --lilac-darker: #45009e;
+    --black-color: #000000;
+    --carbon-color: #202020;
 }
 
 html:not(.page-loaded) *,
@@ -75,7 +99,8 @@ html.page-loaded .hidden {
                 font-weight 0.3s ease,
                 box-shadow 0.3s ease,
                 img 0.3s ease,
-                image 0.3s ease !important;
+                image 0.3s ease,
+                padding 0.3s ease !important;
 }
 
 /* html.page-loaded *,
@@ -928,3 +953,26 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     max-height: -webkit-fill-available !important;
 }
 .height-auto { height: auto !important; }
+
+.dark-text { color: var(--black-color) !important; }
+.coral-button {background-color: var(--coral-color);}
+.coral-button:hover {color: var(--coral-darker) !important; }
+.lightblue-button {background-color: var(--lightblue-color);}
+.lightblue-button:hover {color: var(--lightblue-darker) !important; }
+.lightgreen-button {background-color: var(--lightgreen-color);}
+.lightgreen-button:hover {color: var(--lightgreen-darker) !important; }
+.salmon-button {background-color: var(--salmon-color);}
+.salmon-button:hover {color: var(--salmon-darker) !important; }
+.lilac-button {background-color: var(--lilac-color);}
+.lilac-button:hover {color: var(--lilac-darker) !important; }
+
+.pubbutton {
+    padding: 0.3em 0.5em 0.4em 0.5em !important;
+    font-weight: 500 !important;
+}
+
+.pubbutton:hover {
+    transform: none !important;
+    padding: 0.3em 1em 0.4em 1em !important;
+    font-weight: 700 !important;
+}
