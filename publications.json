@@ -139,5 +139,41 @@
             "contribution": "Poster",
             "url": "https://ieeevr.org/2026/"
         }
+    ],
+
+
+
+
+
+    "teaching": [
+        {
+            "id": "mrgcv-vr",
+            "name": "Virtual Reality",
+            "schedule": "Spring '27",
+            "subject": "MSc in Robotics, Graphics and Computer Vision",
+            "url": "https://mrgcv.unizar.es/teaching/virtual-reality/"
+        }
+    ],
+
+
+
+
+
+    "reviewing_conference": [
+        {
+            "name": "Mock Conference",
+            "years": "2027, 2028"
+        }
+    ],
+
+
+
+
+
+    "reviewing_journal": [
+        {
+            "name": "Mock Journal",
+            "years": "2027, 2028"
+        }
     ]
 }

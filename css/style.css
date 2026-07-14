@@ -136,7 +136,8 @@ html.page-loaded .hidden {
 body           {font-size:18px; font-family:"M PLUS 1", sans-serif; color:var(--body-color); background-color:var(--background)}
 h1             {font-size:30px; padding-top:1em; font-weight:700; color:var(--main-color)}
 h1             {color:var(--main-color)}
-h2             {font-size:24px; margin-top:40px; font-weight:700; color:var(--main-color)}
+h2             {font-size:24px; margin-top:40px; font-weight:600; color:var(--main-color)}
+h3             {font-size:20px; margin-top:40px; font-weight:500; color:var(--main-color)}
 p              {margin:15px 0; line-height:1.5em; text-align:justify; font-weight: 300;}
 a.norecolor    {color:var(--body-color)}
 a              {color:var(--link-color); text-decoration:none}
@@ -347,12 +348,49 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     align-items: center;
 }
 
-.conferences {
+.profservice-base {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .profservice-base {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5em;
+        gap: 0.5em;
+    }
+}
+
+.profservice-cols {
+    display: flex;
+    margin: 0;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .profservice-cols {
+        display: none;
+    }
+}
+
+.profsvc-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.profsvc {
     background-color: var(--background-bw);
-    margin: 0.5em 0;
+    /* margin: 0.5em 0; */
     border-radius: 1.5em;
     color: var(--body-color);
     text-align: right;
+    width: 100%;
+    height: fit-content;
+    padding: 1em;
+    width: auto;
 }
 
 .pub-icontainer {
@@ -462,6 +500,44 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     transition: background-color 0.3s ease,
                 transform 0.3s ease,
                 box-shadow 1s ease !important;
+}
+
+.contact-content {
+    background-color: var(--background-bw);
+    margin: 0.5em 0;
+    border-radius: 1.5em;
+    color: var(--body-color);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+}
+
+.contact-info {
+    width: 40%;
+    padding: 0.75em;
+    padding-left: 0;
+    display: inline-block;
+}
+
+.contact-map {
+    width: 60%;
+    padding: 0.75em;
+    padding-left: 0;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .contact-info, .contact-map {
+        width: 100%;
+        padding: 0.75em;
+    }
 }
 
 .mg-b-0 { margin-bottom: 0 !important; }
@@ -819,6 +895,10 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 .align-items-center { align-items: center !important; }
 .align-items-end { align-items: flex-end !important; }
 
+.align-content-start { align-content: flex-start !important; }
+.align-content-center { align-content: center !important; }
+.align-content-end { align-content: flex-end !important; }
+
 .justify-content-start { justify-content: flex-start !important; }
 .justify-content-center { justify-content: center !important; }
 .justify-content-end { justify-content: flex-end !important; }
@@ -829,6 +909,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 .nowrap { white-space: nowrap !important; }
 
 .gap-0 { gap: 0 !important; }
+.gap-3 { gap: 0.3em !important; }
 .gap-5 { gap: 0.5em !important; }
 .gap-10 { gap: 1em !important; }
 .gap-15 { gap: 1.5em !important; }
@@ -898,6 +979,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     max-width: -webkit-fill-available !important;
 }
 .width-auto { width: auto !important; }
+.width-inherit { width: inherit !important; }
 
 .height-0pc { height: 0% !important; }
 .height-10pc { height: 10% !important; }
@@ -953,6 +1035,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     max-height: -webkit-fill-available !important;
 }
 .height-auto { height: auto !important; }
+.height-inherit { height: inherit !important; }
 
 .dark-text { color: var(--black-color) !important; }
 .coral-button {background-color: var(--coral-color);}
@@ -976,3 +1059,11 @@ body.dark-theme .theme-toggle-btn .fa-moon {
     padding: 0.3em 1em 0.4em 1em !important;
     font-weight: 700 !important;
 }
+
+/* .bloque {
+  background: #2ecc71;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+} */
