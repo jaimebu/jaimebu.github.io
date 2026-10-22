@@ -38,6 +38,7 @@ blockquote:before, blockquote:after {content: ""}
 	--link-color: #009783;
 	--link-hover-color: #298a7d;
 	--background-bw: #eaeaea;
+	--background-bw2: #eaeaea80;
 	--button-bg: #218779;
 	--button-color: #fff;
     --sidebar-background: #8debde80;
@@ -66,7 +67,8 @@ body.dark-theme {
 	--link-color: #69f7bc;
 	--link-hover-color: #3cb884;
 	--background-bw: #303030;
-	--button-bg: hsl(155, 58%, 59%);
+	--background-bw2: #30303080;
+	--button-bg: #5ad3a1;
 	--button-color: #0a472e;
     --sidebar-background: #8eebc480;
     --golden-color: #F5D327;
@@ -340,8 +342,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 
 .publication {
     background-color: var(--background-bw);
-    margin: 0.5em 0;
-    border-radius: 1.5em;
+    border-radius: 1em;
     color: var(--body-color);
     text-align: right;
     display: flex;
@@ -502,6 +503,16 @@ body.dark-theme .theme-toggle-btn .fa-moon {
                 box-shadow 1s ease !important;
 }
 
+.news-content {
+    background-color: var(--background-bw);
+    margin: 0.5em 0;
+    border-radius: 1.5em;
+    color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
 .contact-content {
     background-color: var(--background-bw);
     margin: 0.5em 0;
@@ -521,7 +532,6 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 
 .contact-info {
     width: 40%;
-    padding: 0.75em;
     padding-left: 0;
     display: inline-block;
 }
@@ -858,23 +868,39 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 .text-underline { text-decoration: underline !important; }
 .text-no-underline { text-decoration: none !important; }
 
+.text-ff-main { font-family: "M PLUS 1", sans-serif; }
+
+.color-none { color: transparent !important; }
 .color-body { color: var(--body-color) !important; }
 .color-main { color: var(--main-color) !important; }
 .color-light { color: var(--light-color) !important; }
 .color-secondary { color: var(--secondary-color) !important; }
+.color-bg { color: var(--background) !important; }
+.color-bw { color: var(--background-bw) !important; }
+.color-bw2 { color: var(--background-bw2) !important; }
+.bgcolor-none { background-color: transparent !important; }
 .bgcolor-body { background-color: var(--body-color) !important; }
 .bgcolor-main { background-color: var(--main-color) !important; }
 .bgcolor-light { background-color: var(--light-color) !important; }
 .bgcolor-secondary { background-color: var(--secondary-color) !important; }
+.bgcolor-bg { background-color: var(--background) !important; }
+.bgcolor-bw { background-color: var(--background-bw) !important; }
+.bgcolor-bw2 { background-color: var(--background-bw2) !important; }
 
 .hover-color-body:hover { color: var(--body-color) !important; }
 .hover-color-main:hover { color: var(--main-color) !important; }
 .hover-color-light:hover { color: var(--light-color) !important; }
 .hover-color-secondary:hover { color: var(--secondary-color) !important; }
+.hover-color-bg:hover { color: var(--background) !important; }
+.hover-color-bw:hover { color: var(--background-bw) !important; }
+.hover-color-bw2:hover { color: var(--background-bw2) !important; }
 .hover-bgcolor-body:hover { background-color: var(--body-color) !important; }
 .hover-bgcolor-main:hover { background-color: var(--main-color) !important; }
 .hover-bgcolor-light:hover { background-color: var(--light-color) !important; }
 .hover-bgcolor-secondary:hover { background-color: var(--secondary-color) !important; }
+.hover-bgcolor-bg:hover { background-color: var(--background) !important; }
+.hover-bgcolor-bw:hover { background-color: var(--background-bw) !important; }
+.hover-bgcolor-bw2:hover { background-color: var(--background-bw2) !important; }
 
 .d-inline { display: inline !important; }
 .d-block { display: block !important; }
@@ -905,6 +931,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 
 .flex-column { flex-direction: column !important; }
 .flex-row { flex-direction: row !important; }
+.flex-wrap { flex-flow: wrap !important; }
 
 .nowrap { white-space: nowrap !important; }
 
@@ -980,6 +1007,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 }
 .width-auto { width: auto !important; }
 .width-inherit { width: inherit !important; }
+.width-fitc { width: fit-content !important; }
 
 .height-0pc { height: 0% !important; }
 .height-10pc { height: 10% !important; }
@@ -1036,6 +1064,7 @@ body.dark-theme .theme-toggle-btn .fa-moon {
 }
 .height-auto { height: auto !important; }
 .height-inherit { height: inherit !important; }
+.height-fitc { height: fit-content !important; }
 
 .dark-text { color: var(--black-color) !important; }
 .coral-button {background-color: var(--coral-color);}

@@ -23,8 +23,7 @@
 
 	<body>
 
-
-        <!-- build a static block at the left -->
+        <!-- Sidebar -->
         <div id="sidebar">
             <div id="sidebar-content" class="pd-10 max-height-100pc">
 				<div class="pd-0 d-flex flex-column gap-5 of-y-auto of-x-hidden hide-scroll max bd-rd-10 align-items-center">
@@ -52,46 +51,48 @@
 					</div>
 
 					<div id="contact" class="d-flex align-items-center justify-content-center mg-b-5 gap-3">
-						<!-- button for linkedin  -->
+						<!-- button for linkedin -->
 						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center" href="https://www.linkedin.com/in/jaimebu" target="_blank">
 							<i class="fab fa-linkedin-in"></i>
 						</a>
-						<!-- button for orcid  -->
+						<!-- button for orcid -->
 						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
 							<i class="fab fa-orcid"></i>
 						</a>
-						<!-- button for google scholar  -->
+						<!-- button for google scholar -->
 						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
 							<i class="fas fa-graduation-cap"></i>
 						</a>
-						<!-- button for researchgate  -->
+						<!-- button for researchgate -->
 						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center" href="https://www.researchgate.net/profile/Jaime_Bielsa" target="_blank">
 							<i class="fab fa-researchgate"></i>
 						</a>
-						<!-- button for github  -->
+						<!-- button for github -->
 						<a class="button icon-button pd-0 d-flex hover-color-light justify-content-center" href="https://github.com/jaimebu" target="_blank">
 							<i class="fab fa-github"></i>
 						</a>
+						<!-- button for cv -->
 						<a class="button icon-button width-35em pd-0 d-flex hover-color-light justify-content-center text-wg-900" href="jaimebu_cv.pdf" target="_blank">
 							<i class="fas fa-file mg-r-5"></i><text class="pd-b-1">CV</text>
 						</a>
 					</div>
-
-					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#aboutme">
-						About me
-					</a>
-					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#setofpublications">
-						Publications	
-					</a>
-					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#career">
-						Career	
-					</a>
-					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#profservice">
-						Proffessional Service	
-					</a>
-					<a class="button text-sz-8 text-wg-700 hover-color-light" href="#contacto">
-						Contact	
-					</a>
+					<div class="d-flex align-items-center justify-content-center flex-wrap gap-5 text-sz-10">
+						<a class="button text-sz-8 text-wg-700 hover-color-light" href="index.html">
+							Main
+						</a>
+						<a class="button text-sz-8 text-wg-700 hover-color-light" href="news.html#news">
+							News	
+						</a>
+						<a class="button text-sz-8 text-wg-700 hover-color-light" href="publications.html#setofpublications">
+							Publications	
+						</a>
+						<a class="button text-sz-8 text-wg-700 hover-color-light" href="achievements.html#achievements">
+							Achievements	
+						</a>
+						<a class="button text-sz-8 text-wg-700 hover-color-light" href="contact.html#contacto">
+							Contact	
+						</a>
+					</div>
 
 				</div>
 			</div>
@@ -122,12 +123,20 @@
 			</p> -->
 
 
+			<h1 id="news">
+				News
+			</h1>
+
+			<div id="news-entries" class="news-content d-flex gap-5 pd-10">
+			</div>
+
+
 
 			<h1 id="setofpublications">
 				Publications
 			</h1>
-			<script src="show_publications.js"></script>
-			<div id="publications"></div>
+			<script src="show_stuff.js"></script>
+			<div id="publications" class="bgcolor-bw2 mg-t-5 pd-10 bd-rd-15 d-flex flex-column align-items-center gap-5"></div>
 
 
 
@@ -135,7 +144,7 @@
 				Career
 			</h1>
 
-			<div id="career-record"></div>
+			<div id="career-record" class="bgcolor-bw2 mg-t-5 pd-10 bd-rd-15 d-flex flex-column gap-5"></div>
 
 			<!-- <div class="publication">
 				<div class="pub-icontainer">
@@ -225,44 +234,44 @@
 				Contact
 			</h1>
 
-			<div class="contact-content d-flex gap-10 pd-5">
+			<div class="contact-content d-flex gap-5 pd-5">
 				<div class="d-flex align-items-center justify-content-center vertical-align-center flex-column text-sz-8 contact-info">
 					<div class="d-flex align-items-center justify-content-center vertical-align-center flex-column width-fit-to-available">
 						<i class="fas fa-map-marker-alt text-sz-20"></i><br>
-						<p class="text-align-center text-wg-500">Universidad de Zaragoza</p>
-						<p class="text-align-center mg-y-0">Instituto de Investigación en Ingeniería de Aragón (I3A)</p>
-						<p class="text-align-center mg-y-0 text-italic">Planta 1, Bloque 5, Sala PostDoc</p>
+						<p class="text-align-center mg-b-5 text-wg-500">Instituto de Investigación en Ingeniería de Aragón | I3A - Universidad de Zaragoza</p>
+						<!-- <p class="text-align-center mg-y-0">Instituto de Investigación en Ingeniería de Aragón (I3A)</p> -->
+						<p class="text-align-center mg-y-0 text-italic">Planta 1, Bloque 6, GILab</p>
 						<p class="text-align-center mg-y-0">C/ Mariano Esquillor Gómez, s/n</p>
 						<p class="text-align-center mg-y-0">50018 - Zaragoza</p>
 						<p class="text-align-center mg-t-0 bg-b-10">Spain</p>
 					</div>
-					<div class="d-flex align-items-center justify-content-center vertical-align-center flex-column width-fit-to-available">
-						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="mailto:jaimebu@unizar.es" target="_blank">
+					<div class="d-flex align-items-center justify-content-center vertical-align-center flex-wrap gap-5 width-fit-to-available">
+						<a class="button pd-5 of-x-hidden width-fit-to-available hover-color-light" href="mailto:jaimebu@unizar.es" target="_blank">
 							<div class="d-flex nowrap">
 								<i class="fas fa-envelope mg-r-5"></i>jaimebu@unizar.es
 							</div>
 						</a>
-						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://www.linkedin.com/in/jaimebu" target="_blank">
+						<a class="button pd-5 of-x-hidden width-fit-to-available hover-color-light" href="https://www.linkedin.com/in/jaimebu" target="_blank">
 							<div class="d-flex nowrap">
 								<i class="fab fa-linkedin-in mg-r-5"></i>Jaime Bielsa Uche
 							</div>
 						</a>
-						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
+						<a class="button pd-5 of-x-hidden width-fit-to-available hover-color-light" href="https://orcid.org/0009-0001-5198-2062" target="_blank">
 							<div class="d-flex nowrap">
 								<i class="fab fa-orcid mg-r-5"></i>0009-0001-5198-2062
 							</div>
 						</a>
-						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
+						<a class="button pd-5 of-x-hidden width-fit-to-available hover-color-light" href="https://scholar.google.com/citations?user=yNQiAL4AAAAJ" target="_blank">
 							<div class="d-flex nowrap">
 								<i class="fas fa-graduation-cap mg-r-5"></i>Jaime Bielsa
 							</div>
 						</a>
-						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://www.researchgate.net/profile/Jaime-Bielsa" target="_blank">
+						<a class="button pd-5 of-x-hidden width-fit-to-available hover-color-light" href="https://www.researchgate.net/profile/Jaime-Bielsa" target="_blank">
 							<div class="d-flex nowrap">
 								<i class="fab fa-researchgate mg-r-5"></i>Jaime Bielsa
 							</div>
 						</a>
-						<a class="button pd-5 mg-b-5 of-x-hidden width-fit-to-available hover-color-light" href="https://github.com/jaimebu" target="_blank">
+						<a class="button pd-5 of-x-hidden width-fit-to-available hover-color-light" href="https://github.com/jaimebu" target="_blank">
 							<div class="d-flex nowrap">
 								<i class="fab fa-github mg-r-5"></i>jaimebu
 							</div>

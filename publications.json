@@ -1,4 +1,31 @@
 {
+    "news": [
+        {
+            "date": "Sep '26",
+            "body": "🎓 I've officially started Doctoral Studies in Computer Science - Extended Reality at Universidad de Zaragoza."
+        },
+        {
+            "date": "Jul '26",
+            "body": "🎓 I have finished my Master Studies by presenting my Thesis on the <i>Study and Analysis of the Effect of Cognitive Load in Visual Attention on Multisensory Immersive Environments</i>."
+        },
+        {
+            "date": "Jun '26",
+            "body": "🏆 Our work on <i>An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments</i> has been recognized with an Honorable Mention for Best Full Paper at CEIG 2026."
+        },
+        {
+            "date": "May '26",
+            "body": "Our work on <i>An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments</i> has been accepted for publication in Computers & Graphics, and will be presented at CEIG 2026."
+        },
+        {
+            "date": "Jan '26",
+            "body": "Our poster <i>Exploring Gaze Behavior in Immersive VR under Cognitive Load</i> has been accepted for IEEE VR 2026."
+        }
+    ],
+
+
+
+
+
     "publications": [
         {
             "id": "Bielsa2026-CLGaze",
@@ -95,16 +122,24 @@
 
     "career": [
         {
+            "id": "phd-unizar",
+            "years": "Oct '26 ···",
+            "name": "PhD in Computer Science - Extended Reality",
+            "institution": "Graphics and Imaging Lab | Universidad de Zaragoza",
+            "file_format": "png",
+            "theme_responsive": true
+        },
+        {
             "id": "research-gilab",
-            "years": "2025-",
+            "years": "May '25 - Oct '26",
             "name": "Research Engineer",
-            "institution": "Universidad de Zaragoza",
+            "institution": "Graphics and Imaging Lab | Universidad de Zaragoza",
             "file_format": "png",
             "theme_responsive": true
         },
         {
             "id": "msc-unizar",
-            "years": "2024-2026",
+            "years": "Sep '24 - Jul '26",
             "name": "MSc in Robotics, Graphics and Computer Vision",
             "institution": "Universidad de Zaragoza",
             "file_format": "png",
@@ -112,7 +147,7 @@
         },
         {
             "id": "bsc-unizar",
-            "years": "2020-2024",
+            "years": "Sep '20 - Dec '24",
             "name": "BSc in Computer Science",
             "institution": "Universidad de Zaragoza",
             "file_format": "jpg",
