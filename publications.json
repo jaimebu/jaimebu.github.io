@@ -2,6 +2,10 @@
     "news": [
         {
             "date": "Sep '26",
+            "body": "👨‍🏫 I've attended <i>La Noche Europea de Investigadores e Investigadoras</i> in Zaragoza as a GILab associate."
+        },
+        {
+            "date": "Sep '26",
             "body": "🎓 I've officially started Doctoral Studies in Computer Science - Extended Reality at Universidad de Zaragoza."
         },
         {
@@ -10,15 +14,15 @@
         },
         {
             "date": "Jun '26",
-            "body": "🏆 Our work on <i>An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments</i> has been recognized with an Honorable Mention for Best Full Paper at CEIG 2026."
+            "body": "🚄 I've attended the <i>Congreso Español de Informática Gráfica</i> (CEIG 2026) in Valencia, Spain.<br>🏆 Our work on <i>An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments</i> has been recognized with an Honorable Mention for Best Full Paper at the conference."
         },
         {
             "date": "May '26",
-            "body": "Our work on <i>An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments</i> has been accepted for publication in Computers & Graphics, and will be presented at CEIG 2026."
+            "body": "📄 Our work on <i>An Analysis of Gaze Behavior under Multisensory Cognitive Load in Immersive Environments</i> has been accepted for publication in Computers & Graphics, and will be presented at CEIG 2026."
         },
         {
             "date": "Jan '26",
-            "body": "Our poster <i>Exploring Gaze Behavior in Immersive VR under Cognitive Load</i> has been accepted for IEEE VR 2026."
+            "body": "📃 Our poster <i>Exploring Gaze Behavior in Immersive VR under Cognitive Load</i> has been accepted for IEEE VR 2026."
         }
     ],
 
